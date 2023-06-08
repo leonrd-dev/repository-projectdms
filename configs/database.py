@@ -6,7 +6,7 @@ from sqlalchemy.orm import sessionmaker
 #server = 'nomad2805'
 #database = 'DMSTEST'
 
-database_url = f"mssql+pymssql://binus_intern:Binus1an@10.1.32.65/dms_microservice_dev" #MSSQL SERVER#database_url = 'mssql+pyodbc://' + server + '/' + database + '?trusted_connection=yes&driver=ODBC+Driver+17+for+SQL+Server'
+database_url = "" #MSSQL SERVER#database_url = 'mssql+pyodbc://' + server + '/' + database + '?trusted_connection=yes&driver=ODBC+Driver+17+for+SQL+Server'
 #database_url = f"postgresql://{check.db_user}:{check.db_password}@{check.db_server}:{check.db_port}/{check.db_name}" #POSTGRESQL
 
 engine = create_engine(database_url)
