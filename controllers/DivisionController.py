@@ -18,7 +18,7 @@ def get_division(db:Session=Depends(get_db)):
     
     return (divisions, "Successfully retrieved")
 
-@router.get("/get-division/{division_id}",response_model=DivisionSchema.MtrDivisionGetSchema, status_code=status.HTTP_200_OK)
+@router.get("/get-division/{division_id}", status_code=status.HTTP_200_OK)
 def get_division_by_id(division_id, db:Session=Depends(get_db)):
     division = DivisionCRUD.get_by_id_division(db, division_id)
     if not division: 
